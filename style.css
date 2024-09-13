@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    background-color: black ;
+    color: white;
+    margin-top: 5px;
+    border-bottom: 7px solid #ca3389da;
+
+} 
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
+    gap: 16px;
+
+}
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+/* ::after selector inserts something after the content of each selected element */
+.gallery::after {
+    content: "";
+    width: 400px;
+
+}
